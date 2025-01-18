@@ -43,6 +43,12 @@ function exibirListaAmigos() {
 
 // Função para sortear um amigo secreto
 function sortearAmigo() {
+    //A lista deverá ter pelo menos um amigo
+    if (amigos.length === 0) {
+        alert("Adicione pelo menos um nome antes de sortear.");
+        return;
+    }
+
 
     // Sorteia um nome aleatório da lista
     const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
