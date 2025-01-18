@@ -9,6 +9,12 @@ function adicionarAmigo() {
     const inputAmigo = document.getElementById("amigo");
     const nomeAmigo = inputAmigo.value.trim();
 
+        // Verifica se o campo não está vazio
+        if (nomeAmigo === "") {
+            alert("Por favor, digite um nome do amigo!");
+            return;
+        }
+
 
     // Adiciona o nome à lista de amigos
     amigos.push(nomeAmigo);
